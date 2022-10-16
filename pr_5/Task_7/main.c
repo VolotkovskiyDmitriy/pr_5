@@ -7,10 +7,6 @@ int main (int argc, char ** argv){
     system("printenv");
     exit (1);
   }
- if (argc < 2){
-  printf (" Too few arguments\n");
-  exit (1);
- }
  setenv("HELLO","Y", 1);
  char *var1 = getenv (argv[1]);
  printf ("getenv '%s=%s' \n", argv[1], var1);
